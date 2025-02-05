@@ -35,22 +35,24 @@ weather()
 
 function timeupdate(){
     const todaydate = document.querySelector("#todaydate")
+    const thistime = document.querySelector("#time")
     const now = new Date();
     
     const year = now.getFullYear();
     const month = String(now.getMonth()+1).padStart(2,'0');
     const date =String(now.getDate()).padStart(2,'0');
 
-    const weekdays = ['일','월','화','수','목','금','토'];
+    const weekdays = ['sun','mon','tue','wed','thu','fri','sat'];
     const day = weekdays[now.getDay()];
 
     const hours = String(now.getHours()).padStart(2, '0');
     const minutes = String(now.getMinutes()).padStart(2, '0');
     const seconds = String(now.getSeconds()).padStart(2, '0'); 
 
-    const datetime = `${year}-${month}-${date} (${day}요일) ${hours}:${minutes}:${seconds}`;
-
-    todaydate.textContent = datetime
+    const datenow = `${year}-${month}-${date} (${day})`;
+    const timenow=` ${hours}:${minutes}:${seconds}`
+    todaydate.textContent = datenow
+    thistime.textContent =timenow
 }
 setInterval(timeupdate, 1000)
 
