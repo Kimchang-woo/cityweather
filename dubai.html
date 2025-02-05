@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지역별 날씨</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div class="outbox">
+        <div class="inbox">
+            <div class="todayBox">
+                <div class="today">
+                    <span id="todaydate"></span>
+                </div>
+            </div>
+            <div class="cityname">
+                <h1>DUBAI</h1>
+                <img id="weathericon" alt="날씨아이콘">
+                <div class="weather">
+                    <div>
+                        <span>temp</span>
+                        <span id="temp"></span>
+                    </div>
+                    <div>
+                        <span>wind</span>
+                        <span id="wind"></span>
+                    </div>
+                    <div>
+                        <span>humidity</span>
+                        <span id="hum"></span>
+                    </div>
+                    <div>
+                        <span id="description"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="cityButton">
+                <a href="./index.html">SEOUL</a>
+                <a href="./la.html">LA</a>
+                <a href="./london.html">LONDON</a>
+                <a href="./dubai.html">DUBAI</a>
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>
